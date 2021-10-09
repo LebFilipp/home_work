@@ -6,9 +6,7 @@ body {
   background: #222222;
   padding: 18px 0 19px;
 }
-.header .container {
-  max-width: 1140px;
-  margin: 0 auto;
+.header .head_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,4 +22,49 @@ body {
 }
 .header .nav a {
   margin-left: 33px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.promo {
+  background: #F1E4E6;
+}
+.promo .promo_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.promo .promo_items .man {
+  margin-left: 125px;
+}
+.promo .promo_items .promo_title {
+  border-left: 12px solid #F16D7F;
+}
+.promo .promo_items .promo_title .text_1 {
+  margin: 0;
+  padding: 16px 0 0 16px;
+  font-weight: 900;
+  font-size: 48px;
+  color: #222222;
+  line-height: 38px;
+}
+.promo .promo_items .promo_title .text_2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #222222;
+}
+.promo .promo_items .promo_title .fashion {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.pink_text {
+  color: #F16D7F;
 }
