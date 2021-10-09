@@ -1,3 +1,27 @@
 body {
   font-family: "Lato";
 }
+
+.header {
+  background: #222222;
+  padding: 18px 0 19px;
+}
+.header .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .logo_search a:first-child {
+  margin-right: 41px;
+}
+.header .nav a {
+  margin-left: 33px;
+}
