@@ -174,6 +174,7 @@ body{
     background-color: #222222;
     display: grid;
     grid-template-columns: 360px 360px 360px;
+    grid-gap: 30px;
     justify-content: center;
     .feature_card{
         display: flex;
@@ -194,4 +195,75 @@ body{
             color: #FBFBFB;
         }
     }
+}
+.call_back{
+    padding: 97px 0 120px;
+    background-image: url(/img/testimonials/bg.png);
+    background-size: contain;
+    background-position: center;
+    
+}
+.call_back_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .testimonials{
+        text-align: center;
+        .testimonials_text{
+            max-width: 360px;
+            margin: 30px 0 0;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 24px;
+            color: #222222;
+        }
+    }
+    .subscribe{
+        text-align: center;
+        .subscribe_title{
+            font-weight: 700;
+            font-size: 24px;
+            color: #222222;
+        }
+        .subscribe_subtitle{
+            font-weight: 400;
+            font-size: 18px;
+            color: #222222;
+        }
+    }
+    .subscribe_input{
+        margin-top: 32px;
+    }
+    .mail{
+        width: 256px;
+        height: 49px;
+        background: #E1E1E1;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #222224;
+        padding: 0 0 0 22px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .mail:active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+    .subscribe_btn{
+        width: 100px;
+        height: 49px;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        color:#ffffff;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background: #F16D7F;
+        cursor: pointer;
+
+    }
+
 }
