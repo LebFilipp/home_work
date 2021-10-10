@@ -297,8 +297,9 @@ body {
 .call_back {
   padding: 97px 0 120px;
   background-image: url(/img/testimonials/bg.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .call_back_container {
@@ -368,4 +369,43 @@ body {
   border-bottom-right-radius: 30px;
   background: #F16D7F;
   cursor: pointer;
+}
+
+.footer {
+  background: #222222;
+  padding: 24px 0 24px;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer_container .copy {
+  font-weight: normal;
+  font-size: 16px;
+  color: #FBFBFB;
+}
+.footer_container .social_icon {
+  margin-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
