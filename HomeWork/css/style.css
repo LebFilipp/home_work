@@ -341,6 +341,7 @@ body {
 }
 .call_back_container .subscribe_input {
   margin-top: 32px;
+  margin-right: 100px;
 }
 .call_back_container .mail {
   width: 256px;
