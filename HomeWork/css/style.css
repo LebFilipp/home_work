@@ -411,3 +411,39 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+/*index end*/
+/*catalog start*/
+.new_arrivals {
+  background: #F8F3F4;
+  padding: 60px 0 60px;
+}
+.new_arrivals .arrivals_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.new_arrivals .arrivals_container .h1_title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.new_arrivals .arrivals_container .nav_link {
+  text-decoration: none;
+  color: #636363;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.new_arrivals .arrivals_container .nav_link:active {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: #F16D7F;
+}
