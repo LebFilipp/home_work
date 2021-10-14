@@ -3,6 +3,7 @@ body {
 }
 
 .header {
+  position: relative;
   background: #222222;
   padding: 18px 0 19px;
 }
@@ -22,6 +23,33 @@ body {
 }
 .header .nav a {
   margin-left: 33px;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  width: 232px;
+  height: 764px;
+  padding: 16px 0 0 34px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.burger-menu .h3-menu_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.burger-menu .category_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.burger-menu .ul-for {
+  margin: 12px 0 20px;
+  padding-left: 20px;
 }
 
 .container {
@@ -399,8 +427,13 @@ body {
   font-size: 16px;
   color: #FBFBFB;
 }
-.footer_container .social_icon {
+.footer_container .social-link {
   margin-left: 8px;
+  color: #000;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,6 +443,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.footer_container .social-link:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
 }
 
 /*index end*/
@@ -446,4 +483,163 @@ body {
   font-size: 16px;
   line-height: 17px;
   color: #F16D7F;
+}
+
+.new_product {
+  padding: 51px 0 96px;
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 64px;
+}
+
+.filter_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 304px;
+  margin-left: 10px;
+}
+.filter_title .h2_title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  margin-right: 11px;
+}
+.filter_title .filter_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.size_nav {
+  position: relative;
+}
+
+.size-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+.size-box label .size-box label:last-child {
+  margin-bottom: 0;
+}
+
+.size-box {
+  margin-top: 5px;
+  width: 79px;
+  height: 103px;
+  position: absolute;
+  padding: 7px 30px 12px 9px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.new-product-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: repeat 30px 3, 1fr;
+  grid-template-rows: repeat 3, 1fr;
+  grid-gap: 30px;
+}
+
+.new-product-card > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.new-product-card > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.new-product-card > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.new-product-card > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.new-product-card > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.new-product-card > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.new-product-card > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.new-product-card > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.new-product-card > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.new-product-card > *:nth-child(10) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.new-product-card > *:nth-child(11) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.new-product-card > *:nth-child(12) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+.new-product-card .card_item {
+  background: #F8F8F8;
+  height: 581px;
+}
+.new-product-card .text_card {
+  padding: 25px 0 0 18px;
+}
+.new-product-card .text_card .card_title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+}
+.new-product-card .text_card .card_subtitle {
+  max-width: 315px;
+  margin: 13px 0 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #5D5D5D;
+}
+.new-product-card .text_card .card_price {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
