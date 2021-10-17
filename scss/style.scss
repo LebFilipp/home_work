@@ -2,6 +2,38 @@ body{
     font-family: 'Lato';
     
 }
+/*Kнопки*/
+.btn{
+    text-decoration: none;
+    text-align: center;
+    background: none;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    padding: 15px 39px 14px 39px;
+}
+.btn-cart{
+    display: flex;
+    align-items: center;
+    padding: 11px 16px 13px 13px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: rgba(58, 56, 56, 0.86);
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    .btn_img{
+        margin-right: 11px;
+    }
+}
+.product_btn{
+    display: flex;
+    justify-content: center;
+    .btn:hover{
+        background: #FF6A6A;
+        color: #F8F8F8;
+    }
+}
 
 .header{
     position: relative;
@@ -26,7 +58,7 @@ body{
     top: 77px;
     right: 0;
     width: 232px;
-    height: 764px;
+    height: 750px;
     padding: 16px 0 0 34px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -155,6 +187,26 @@ body{
     .card_item{
         background: #F8F8F8;
         height: 581px;
+        position: relative;
+        overflow: hidden;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 360px;
+        height: 420px;
+        background-color: rgba(58, 56, 56, 0.83);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        opacity: 0;
+        transition: 0.3s;
+      }
+    .card_item:hover .overlay {
+        opacity: 1;
     }
     .text_card{
         padding: 25px 0 0 18px;
@@ -179,22 +231,6 @@ body{
         }
     }
 
-}
-.product_btn{
-    display: flex;
-    justify-content: center;
-    .btn:hover{
-        background: #FF6A6A;
-        color: #F8F8F8;
-    }
-}
-.btn{
-    text-decoration: none;
-    text-align: center;
-    background: none;
-    color: #F26376;
-    border: 1px solid #FF6A6A;
-    padding: 15px 39px 14px 39px;
 }
 .feature{
     padding: 103px 0 103px;
@@ -345,18 +381,23 @@ body{
                 font-size: 24px;
                 line-height: 29px;
             }
+            .breadcrumb{
+                display: flex;
+                list-style: none;         
+            }
+            .breadcrumb li {
+               margin-left: 4px;
+            }
             .nav_link{
+                display: flex;
                 text-decoration: none;
                 color: #636363;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 17px;
             }
-            .nav_link:active{
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 17px;
-                color: #F16D7F;
+            .nav_link:hover{
+                text-decoration: underline;
             }
             
     }
@@ -418,6 +459,26 @@ body{
     .card_item{
         background: #F8F8F8;
         height: 581px;
+        position: relative;
+        overflow: hidden;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 360px;
+        height: 420px;
+        background-color: rgba(58, 56, 56, 0.83);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        opacity: 0;
+        transition: 0.3s;
+      }
+    .card_item:hover .overlay {
+        opacity: 1;
     }
     .text_card{
         padding: 25px 0 0 18px;
@@ -440,5 +501,28 @@ body{
             font-size: 16px;
             margin-bottom: 20px;
         }
+    }
+}
+.pagination_box{
+    margin-top: 49px;
+    display: flex;
+    justify-content: center;
+    .pagination{
+        padding: 15px 16px 15px 16px;
+        border: 1px solid #EBEBEB;
+        a{
+            padding: 0 10px 0 10px;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 16px;
+            color: #C4C4C4;
+        }
+        a.active{
+            color: #EF5B70;
+        }
+       
+    }
+    .pagination a:hover:not(.active) {
+        color: #000;
     }
 }
