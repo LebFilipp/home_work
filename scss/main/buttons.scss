@@ -1,0 +1,35 @@
+.btn{
+    text-decoration: none;
+    text-align: center;
+    background: none;
+    color: $pincColor;
+    border: 1px solid $pincColor;
+    padding: 15px 39px 14px 39px;
+}
+
+
+.btn-cart{
+    display: flex;
+    align-items: center;
+    padding: 11px 16px 13px 13px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: rgba(58, 56, 56, 0.86);
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.btn_img{
+    margin-right: 11px;
+}
+
+
+.product_btn{
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    background: $pincColor;
+    color: #F8F8F8;
+}

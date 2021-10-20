@@ -1,0 +1,38 @@
+.offer{
+    padding: 65px 0 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 180px;
+    grid-gap: 30px;
+    justify-content: center;
+}
+.promo_item{
+    position: relative;
+    width: 360px;
+    &:last-child{
+        width: 1140px;
+        height: 180px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+.promo_text{
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 105px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #ffffff;
+}
+.promo_text2{
+    font-weight: 700;
+    font-size: 24px;
+}
+.last_item{
+    position: absolute;
+    top: 65px;
+}
