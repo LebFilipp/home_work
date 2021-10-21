@@ -1,0 +1,94 @@
+.new_product{
+    padding: 51px 0 96px;
+}
+.filters{
+    display: flex;
+    align-items: center;
+    padding-bottom: 64px;
+}
+.filter_title{
+    display: flex;
+    align-items: center;
+    margin-right: 304px;
+    margin-left: 10px;
+}
+.h2_title{
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    margin-right: 11px;
+}
+.filter_btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+//вложенные списки
+
+.details-box{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-right: 28px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.size_nav{
+    position: relative;
+    display: flex;
+}
+.size-box{
+    margin-top: 5px;
+    width: 79px;
+    height: 103px;
+    position: absolute;
+    padding: 7px 30px 12px 9px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    z-index: 2;
+}
+.size-box label {
+    display: block;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .size-box label:last-child{
+        margin-bottom: 0;
+    }
+}
+.new-product-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (3 , 1fr );
+    grid-gap: 30px;
+}
+.pagination_box{
+    margin-top: 49px;
+    display: flex;
+    justify-content: center;
+}
+.pagination{
+        padding: 15px 16px 15px 16px;
+        border: 1px solid #EBEBEB;
+        a{
+            padding: 0 10px 0 10px;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 16px;
+            color: #C4C4C4;
+            &.active{
+            color: $pincColor;
+            }
+       
+        }
+}        
+.pagination a:hover:not(.active) {
+    color: #000;
+}

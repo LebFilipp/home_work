@@ -1,0 +1,45 @@
+.header{
+    position: relative;
+    background: #222222;
+    padding: 18px 0 19px;
+}
+.head_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_search a:first-child{
+    margin-right: 41px;
+}
+.nav{
+   a{
+    margin-left: 33px;
+    }
+}
+
+.burger-menu{ 
+    visibility: hidden;
+    position: absolute;
+    top: 77px;
+    right: 0;
+    width: 232px;
+    height: 750px;
+    padding: 16px 0 0 34px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.h3-menu_title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.category_title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.ul-for{
+    margin: 12px 0 20px;
+    padding-left: 20px;
+}

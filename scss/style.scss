@@ -1,0 +1,52 @@
+body{
+    font-family: 'Lato'; 
+}
+
+    /*variables*/
+    
+$pincColor: #F16D7F;
+
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.pink_text{
+    color: $pincColor;
+}
+
+
+/*index start*/
+
+    /*buttons кнопки*/
+    @import "main/buttons.scss";
+
+    /*header шапка */
+    @import "main/header.scss";
+
+    /*promo промо*/
+    @import "main/promo.scss";
+
+    /*offer предложение*/
+    @import "main/offer.scss";
+
+    /*products продукт*/
+    @import "main/products.scss";
+
+    /*feature фитчи*/
+    @import "main/feature.scss";
+
+    /*call-back обратная связь*/
+    @import "main/callBack.scss";
+
+    /*footer подвал*/
+    @import "main/footer.scss";
+
+/*catalog start*/
+
+    /*new arrivals новые поступления*/
+    @import "main/newArrivals.scss";
+
+    /*catalog-product продукция каталога*/
+    @import "main/new-product.scss";
+
