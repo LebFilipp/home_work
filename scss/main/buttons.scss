@@ -5,10 +5,16 @@
     color: $pincColor;
     border: 1px solid $pincColor;
     padding: 15px 39px 14px 39px;
+    transition: 0.3s;
+    &:hover{
+        background: $pincColor;
+        color: #F8F8F8;
+    }
 }
 
 
 .btn-cart{
+    background: transparent;
     display: flex;
     align-items: center;
     padding: 11px 16px 13px 13px;
@@ -16,20 +22,39 @@
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    background: rgba(58, 56, 56, 0.86);
+    
     border: 1px solid #FFFFFF;
     cursor: pointer;
-}
-.btn_img{
-    margin-right: 11px;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
+/* registration button*/
+.join-now{
+    max-width: 167px;
+    height: 50px;
+    border: none;
 
-.product_btn{
-    display: flex;
-    justify-content: center;
-}
-.btn:hover{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+    transition: 0.3s;
     background: $pincColor;
-    color: #F8F8F8;
+    &:hover{
+        background: #FFFFFF;
+        color: $pincColor;
+        border: 1px solid $pincColor;
+    }
+    &:hover .arrow{
+        fill: $pincColor;
+    }
+}
+.arrow{
+    margin-left: 20px;
+    fill: #FFFFFF;
+    transition: 0.3s;
 }
