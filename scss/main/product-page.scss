@@ -1,0 +1,113 @@
+/*slider слайдер*/
+.product-page{
+    position: relative;
+}
+
+.slider{
+    padding: 11px 0 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 777px;
+    background: #F7F7F7;
+
+}
+    /*discription product*/
+
+
+.product-discrip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    padding: 65px 0 65px;
+    background: #FFFFFF;
+    margin-top: -65px;
+}
+.product-discrip-title{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pincColor;
+    margin: 0;  
+}
+.short-hr-product{
+    margin: 12px 0 12px;
+    width: 63px;
+    height: 3px;
+    background: #EF5B70;
+    border: none;
+}.product-discrip-subtitle{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin: 0;
+}
+.product-discrip-text{
+    max-width: 555px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin: 48px 0 32px;
+}
+.price-product{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin: 0;
+}
+.long-hr-product{
+    margin: 65px 0 65px;
+    width: 641px;
+    height: 1px;
+    background: #EAEAEA;
+    border: none;
+}
+    /*выпадающие чекбоксы*/
+
+    .details-box{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        margin-right: 23px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .choose-nav{
+        position: relative;
+        display: flex;
+    }
+    .choose-box{
+        margin-top: 5px;
+        width: 79px;
+        height: 103px;
+        position: absolute;
+        padding: 7px 30px 12px 9px;
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        z-index: 2;
+    }
+    .choose-box label {
+        display: block;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        .choose-box label:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .product-catalog{
+        display: flex;
+        gap: 30px;
+        padding: 128px 0 128px;
+    }
