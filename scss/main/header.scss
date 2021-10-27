@@ -12,10 +12,48 @@
     margin-right: 41px;
 }
 .nav{
+    display: flex;
    a{
     margin-left: 33px;
     }
 }
+.search-icon{
+    fill: #E8E8E8;
+    &:hover{
+        fill: $pincColor;
+    }
+}
+.menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #E8E8E8;
+    &:hover{
+        fill: $pincColor;
+    }
+    &:active{
+        fill: $pincColor;
+    }
+}
+.reg-icon{
+    fill: #E8E8E8;
+    &:hover{
+        fill: $pincColor;
+    }
+    &:active{
+        fill: $pincColor;
+    }
+}
+.cart-icon{
+    fill: #E8E8E8;
+    &:hover{
+        fill: $pincColor;
+    }
+    &:active{
+        fill: $pincColor;
+    }
+}
+
 
 .burger-menu{ 
     visibility: hidden;

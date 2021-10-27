@@ -50,3 +50,10 @@ $pincColor: #F16D7F;
     /*catalog-product продукция каталога*/
     @import "main/new-product.scss";
 
+/*registration start*/
+
+    /*registration page страница регистрации*/
+    @import "main/registration.scss";
+
+    /*product page страница товара*/
+    @import "main/product-page.scss";

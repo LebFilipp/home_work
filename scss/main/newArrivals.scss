@@ -17,6 +17,7 @@
     list-style: none;         
     & li {
         margin-left: 4px;
+       
     }
 }
 .nav_link{
@@ -28,5 +29,8 @@
     line-height: 17px;
     &:hover{
     text-decoration: underline;
+    }
+    &::after{
+        content: "/";
     }
 }
