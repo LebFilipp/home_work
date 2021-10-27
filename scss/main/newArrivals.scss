@@ -1,8 +1,10 @@
 .new_arrivals{
+    
     background: #F8F3F4;
     padding: 60px 0 60px;
 }
 .arrivals_container{
+    
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -11,7 +13,20 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
+    animation: move-title 1s alternate;
+    @keyframes move-title {
+        from {
+            color: black;
+            margin-left: -200px;
+            transform: rotate(-90deg);
+        }
+        to{
+            margin-left: 0;
+            color: $pincColor;
+        }
+    }
 }
+
 .breadcrumb{
     display: flex;
     list-style: none;         
@@ -32,5 +47,16 @@
     }
     &::after{
         content: "/";
+    }
+}
+.nav_links{
+    animation: move-nav 1s alternate;
+    @keyframes move-nav {
+        0%{
+            margin-right: -180px;
+        }
+        100%{
+            margin: 0;
+        }
     }
 }

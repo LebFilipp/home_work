@@ -9,7 +9,19 @@
 }
 .promo_title{
     border-left: 12px solid $pincColor;
+    transition: 0.3s;
+    animation-name: title-svipe;
+    animation-duration: 3s;
 }
+@keyframes title-svipe{
+    from {
+        margin-right: 0;
+    }
+    to {
+        margin-right: 200;
+    }
+}
+
 .text_1{
     margin: 0;
     padding: 16px 0 0 16px;
