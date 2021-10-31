@@ -1,7 +1,9 @@
 body{
     font-family: 'Lato'; 
 }
-
+details > summary::-webkit-details-marker {
+    display: none;
+}
     /*variables*/
     
 $pincColor: #F16D7F;

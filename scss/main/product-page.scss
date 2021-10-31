@@ -79,6 +79,13 @@
             margin-right: 0;
         }
     }
+    .details-box>summary{
+        list-style: none;
+        &::after{
+            margin-left: 10px;
+            content: url(../img/size-nav-details-icon.svg);
+        }
+    }
     .choose-nav{
         position: relative;
         display: flex;
