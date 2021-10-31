@@ -353,7 +353,7 @@ details > summary::-webkit-details-marker {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     position: relative;
     background: #222222;
@@ -457,7 +457,7 @@ details > summary::-webkit-details-marker {
     line-height: 29px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .promo_items {
     padding: 148px 0 149px;
     max-width: 375px;
@@ -663,7 +663,7 @@ details > summary::-webkit-details-marker {
     top: 33px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .offer {
     width: 343px;
     padding: 64px 16px 64px 16px;
@@ -904,7 +904,7 @@ details > summary::-webkit-details-marker {
     -ms-grid-column: 3;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .product_cards {
     width: 360px;
     padding: 72px 0 47px 0;
@@ -1141,7 +1141,7 @@ details > summary::-webkit-details-marker {
     margin-top: 48px;
   }
 }
-@media (max-width: 678px) {
+@media (max-width: 767px) {
   .call_back {
     padding: 97px 0 120px;
     background-image: url(../img/testimonials/bg.png);
