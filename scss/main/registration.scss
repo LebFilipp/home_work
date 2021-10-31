@@ -11,6 +11,16 @@
 .reg-title{
     font-weight: 400;
     font-size: 24px;
+    animation-name: shopping-move;
+    animation-duration: 2s;
+}
+@keyframes shopping-move {
+    from{
+        margin-left: 800px;
+    }
+    to{
+        margin-left: 0;
+    }
 }
 
     /*registration form*/
