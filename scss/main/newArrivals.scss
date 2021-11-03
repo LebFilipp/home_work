@@ -1,7 +1,7 @@
 .new_arrivals{
-    
     background: #F8F3F4;
-    padding: 60px 0 60px;
+    padding: 60px 16px;
+    
 }
 .arrivals_container{
     
@@ -10,6 +10,7 @@
         align-items: center;
 }
 .h1_title{
+    margin: 0;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -29,7 +30,8 @@
 
 .breadcrumb{
     display: flex;
-    list-style: none;         
+    list-style: none;
+    padding: 0;         
     & li {
         margin-left: 4px;
        
@@ -59,4 +61,36 @@
             margin: 0;
         }
     }
+}
+@media (max-width:767px) {
+    .new_arrivals{
+        background: #F8F3F4;
+        padding: 24px 16px 46px 16px;
+        
+    }
+    .arrivals_container{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1_title{
+        margin-bottom: 32px;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        animation: move-title 1s alternate;
+        @keyframes move-title {
+            from {
+                color: black;
+                margin-left: -200px;
+                transform: rotate(-90deg);
+            }
+            to{
+                margin-left: 0;
+                color: $pincColor;
+            }
+        }
+    }
+    
 }

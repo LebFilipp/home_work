@@ -142,6 +142,7 @@
 /*checkout button*/
 
 .checkout{
+    box-sizing: border-box;
     width: 273px;
     padding: 15px 0 16px;
     font-weight: 300;
@@ -149,7 +150,7 @@
     line-height: 19px;
     color: #FFFFFF;
     background: $pincColor;
-    border: none;
+    border: 1px solid #F5F3F3;
     cursor: pointer;
     text-align: center;
     margin-top: 17px;

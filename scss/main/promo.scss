@@ -2,26 +2,18 @@
     background: #F1E4E6;
 }
 .promo_items{
-    max-width: 1450px;
+    max-width: 1140px;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
+.man{
+    margin-left: -215px;
+}
 .promo_title{
     border-left: 12px solid $pincColor;
-    transition: 0.3s;
-    animation-name: title-svipe;
-    animation-duration: 3s;
+    margin-left: 64px;
 }
-@keyframes title-svipe{
-    from {
-        margin-right: 0;
-    }
-    to {
-        margin-right: 200;
-    }
-}
-
 .text_1{
     margin: 0;
     padding: 16px 0 0 16px;
@@ -38,4 +30,79 @@
 .fashion{
     font-weight: 700;
     font-size: 32px;   
+}
+@media (max-width: 1172px) {
+    .man{
+        height: 368px;
+        width: 386px;
+        margin-left: 0;
+    }
+    .promo_items{
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .promo_title{
+        border-left: 12px solid $pincColor;
+        margin-left: -100px;
+        margin-right: 33px;
+    }
+    .text_1{
+        margin: 0;
+        padding: 16px 0 0 16px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 29px;
+        color: #222222;
+    }
+    .text_2{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        
+        color: #222222;
+    }
+    .fashion{
+        font-size: 24px;
+        line-height: 29px;   
+    }
+}
+@media (max-width: 767px){
+    .promo_items{
+        padding: 148px 0 149px;
+        max-width: 375px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .man{
+        display: none;
+    }
+    .promo_title{
+        border-left: 12px solid $pincColor;
+        margin-left: 33px;
+        margin-right: 0;
+    }
+    .text_1{
+        margin: 0;
+        padding: 16px 0 0 16px;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 29px;
+        color: #222222;
+    }
+    .text_2{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        
+        color: #222222;
+    }
+    .fashion{
+        font-size: 20px;
+        line-height: 24px;   
+    }
 }

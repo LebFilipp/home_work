@@ -1,7 +1,7 @@
 .header{
     position: relative;
     background: #222222;
-    padding: 18px 0 19px;
+    padding: 18px 32px 19px 32px;
 }
 .head_container{
     display: flex;
@@ -54,22 +54,37 @@
     }
 }
 
-
-.burger-menu{ 
-    visibility: hidden;
+/* menu burger*/
+.details-memu-category > summary {
+    list-style: none;
+}
+.icon-menu-close{
+    fill: #6F6E6E;
+    float: right;
+    margin-right: 17px;
+    &:hover{
+        fill: $pincColor;
+    }
+}
+.burger-menu{
     position: absolute;
-    top: 77px;
+    top: 78px;
     right: 0;
     width: 232px;
-    height: 750px;
+    height: 748px;
     padding: 16px 0 0 34px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 3;
+}
+.menu-close{
+    display: none;
 }
 .h3-menu_title{
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    margin: 37px 0 24px;
     color: #000000;
 }
 .category_title{
@@ -79,5 +94,34 @@
 }
 .ul-for{
     margin: 12px 0 20px;
-    padding-left: 20px;
+    padding-left: 22px;
+}
+.for{
+    list-style: none;
+    margin-bottom: 11px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.category{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    transition: 0.2s;
+    &:hover{
+        color: #000000;
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .header{
+        position: relative;
+        background: #222222;
+        padding: 18px 16px 19px 16px;
+    }
+    .nav>a{
+        display: none;
+    }
 }
