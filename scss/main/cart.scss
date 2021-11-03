@@ -245,7 +245,7 @@
     .shopping-cart{
         padding: 39px 0 96px;
     }
-    .cart-item{
+    .cart-item{ 
         width: 358px;
         position: relative;
         display: flex;
@@ -254,7 +254,6 @@
         transition: 0.3s;
         &:hover{
             transform: scale(1.03);
-            
         }
     }
     .cart-item-img{
