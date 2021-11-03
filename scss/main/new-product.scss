@@ -1,17 +1,17 @@
 .new_product{
-    padding: 51px 0 96px;
+    padding: 51px 16px 96px 16px;
 }
 .filters{
     display: flex;
     align-items: center;
-    padding-bottom: 64px;
+    margin-bottom: 64px;
 }
 .filter-wraper{
     position: relative;
 }
 .filter_title{
     padding: 13px 16px;
-    margin-top: -16px;
+    margin-top: -21px;
     max-width: 360px;
     font-weight: 700;
     font-size: 14px;
@@ -21,6 +21,7 @@
     z-index: 2;
     background: #FFFFFF;
     box-sizing: content-box;
+    transition: 0.3s;
     
     & > summary{
         display: flex;
@@ -33,6 +34,9 @@
     box-sizing: border-box;
     color: $pincColor;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter-icon-big{
+    display: none;
 }
 .inside{
     font-weight: normal;
@@ -179,4 +183,76 @@
 }
 .points{
     color: #C4C4C4;
+}
+@media (max-width:1170px) {
+    .filters{
+        margin: 0 auto;
+        max-width: 736px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+    .size_nav{
+        margin: 0;
+        position: relative;
+        display: flex;
+    }
+    .new-product-card{
+        margin: 0 auto;
+        max-width: 735px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (4 , 1fr );
+        grid-gap: 16px;
+    }
+    .new-product-card>.card_item:nth-child(3){
+        display: none;
+    }
+}
+@media (max-width:767px){
+    .new_product{
+        padding: 51px 0 96px 0;
+    }
+
+    .filter-title-text{
+        display: none;
+    }
+    
+    .filter-icon-smal{
+        display: none;
+    }
+    .filter-icon-big{
+        display: block;
+    }
+    .new-product-card{
+        margin: 0 auto;
+        max-width: 360px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6 , 1fr );
+        grid-gap: 16px;
+    }
+    .new-product-card>.card_item:nth-child(3){
+        display: none;
+    }
+    
+    .details-box{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6F6E6E;
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .filters{
+        margin: 0 auto;
+        max-width: 360px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+    }
 }

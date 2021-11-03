@@ -1,11 +1,11 @@
 
     /*registration title*/
 .regisctration-page{
-    padding: 64px 0 96px;
+    padding: 64px 16px 96px 16px;
     display: flex;
 }
 .registration-header{
-    padding: 59px 0 60px;
+    padding: 59px 16px 60px 16px;
     background: #F8F3F4;
 }
 .reg-title{
@@ -106,5 +106,68 @@
     &::before{
         content: url(../img/marker.svg);
         margin-right: 22px;
+    }
+}
+@media (max-width: 1170px) {
+    .regisctration-page{
+        padding: 40px 16px 96px 16px;
+        display: flex;
+    }
+    .reg-form{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 22px;
+    }
+    .reg-discription{
+        max-width: 354px;
+    }
+    .title-discrip{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .subtitle-discrip{
+        margin: 0;
+        padding: 32px 0 22px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    .reg-list-item{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 16px;
+        &::before{
+            content: url(../img/marker.svg);
+            margin-right: 22px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .reg-title{
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        animation-name: shopping-move;
+        animation-duration: 1.5s;
+    }
+    .regisctration-page{
+        margin: 0 auto;
+        max-width: 360px;
+        padding: 40px 0 96px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reg-form{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 39px;
     }
 }
