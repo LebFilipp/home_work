@@ -39,7 +39,7 @@
 }
 .user-info{
     margin-top: 20px;
-    padding: 13px 0 16px 18px;
+    padding: 13px 18px 16px 18px;
     border: 1px solid #A4A4A4;
     font-weight: 300;
     &:focus{
@@ -94,6 +94,8 @@
 }
 .reg-list{
     list-style: none;
+    list-style-image: url(../img/marker.svg);
+    margin-left: 22px;
     padding: 0;
 }
 .reg-list-item{
@@ -103,15 +105,13 @@
     line-height: 29px;
     color: #000000;
     margin-bottom: 16px;
-    &::before{
-        content: url(../img/marker.svg);
-        margin-right: 22px;
-    }
+    padding-left: 22px;
 }
 @media (max-width: 1170px) {
     .regisctration-page{
         padding: 40px 16px 96px 16px;
         display: flex;
+        justify-content: space-around;
     }
     .reg-form{
         width: 360px;
@@ -141,10 +141,10 @@
         line-height: 19px;
         color: #000000;
         margin-bottom: 16px;
-        &::before{
-            content: url(../img/marker.svg);
-            margin-right: 22px;
-        }
+        // &::before{
+        //     content: url(../img/marker.svg);
+        //     margin-right: 22px;
+        // }
     }
 }
 @media (max-width: 767px){
@@ -170,4 +170,5 @@
         margin-right: 0;
         margin-bottom: 39px;
     }
+    
 }
