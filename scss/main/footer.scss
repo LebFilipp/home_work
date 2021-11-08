@@ -1,6 +1,7 @@
 .footer{
     background: #222222;
     padding: 24px 32px 24px 32px;
+    margin-top: auto;
 }
 .footer_container{
     display: flex;
@@ -17,19 +18,24 @@
 }
 .social-link{
     margin-left: 8px;
-    color: #000;
     text-decoration: none;
-    background-color: #FFFFFF;
     width: 32px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background: #FFFFFF;
+    transition: 0.3s;
     &:hover{
-            color: #FFFFFF;
             background: $pincColor;
     }
+}
+.social-link:hover .social-icon{
+    fill: #FFFFFF;
+}
+.social-icon{
+    fill: #000000;
+    
 }
 @media (max-width: 687px) {
     .footer{

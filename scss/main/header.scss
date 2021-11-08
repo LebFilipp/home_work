@@ -67,6 +67,7 @@
     }
 }
 .burger-menu{
+    display: none;
     position: absolute;
     top: 78px;
     right: 0;
@@ -76,9 +77,10 @@
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 3;
+    transition: 0.3s;
 }
-.menu-close{
-    display: none;
+.menu-open{
+    display: block;
 }
 .h3-menu_title{
     font-weight: 700;

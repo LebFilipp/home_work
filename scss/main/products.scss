@@ -51,12 +51,13 @@
 }
 .card_item:hover .overlay {
     opacity: 1;
+    cursor: default;
 }
 .btn_img{
     margin-right: 11px;
 }
 .text_card{
-    padding: 25px 0 0 18px;
+    padding: 25px 18px 0;
 }
 .card_title{
     margin: 0;
